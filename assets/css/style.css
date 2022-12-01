@@ -37,7 +37,7 @@ html {
 
 @font-face {
   font-family: Gotham;
-  src: url(../fonts/gotham-6-cufonfonts/GothamLight.ttf);
+  src: url(../fonts/gotham-6-cufonfonts/GothamLight.otf);
 }
 @font-face {
   font-family: GothamBold;
@@ -80,6 +80,7 @@ html {
 }
 .home .grid-layout .home__content .home__intro .text {
   margin: auto 0;
+  font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
   line-height: 2.4rem;
@@ -246,6 +247,7 @@ html {
   }
 }
 .home__nav .nav-list .nav-list__item a {
+  font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
   line-height: 2.4rem;
@@ -317,6 +319,7 @@ html {
   background: #e5e1db;
 }
 .we .we__content .we__wrapper-text .text {
+  font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
   line-height: 2.4rem;
@@ -338,6 +341,7 @@ html {
     text-align: end;
     background: #101010;
     padding: 4rem 2rem;
+    font-family: Gotham;
     font-size: 1.6rem;
     letter-spacing: 0.8rem;
     line-height: 2.4rem;
@@ -398,6 +402,7 @@ html {
 }
 .we-mobile .we-mobile__artilce .title,
 .we-mobile .we-mobile__artilce .text {
+  font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
   line-height: 2.4rem;
@@ -478,6 +483,7 @@ html {
 }
 .video-area .container .decoration--03::before {
   content: "Conheça \aNossa       " url(../images/for-your.png);
+  font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
   line-height: 2.4rem;
@@ -561,6 +567,7 @@ html {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
   line-height: 2.4rem;

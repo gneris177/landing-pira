@@ -9,6 +9,7 @@ $color-white: #ffffff;
 }
 
 @mixin text-default {
+  font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
   line-height: 2.4rem;
