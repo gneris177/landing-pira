@@ -66,8 +66,8 @@
       &::before {
         content: 'Conheça \a Nossa \00a0\00a0\00a0\00a0\00a0\00a0'  url(../images/for-your.png);
         @include text-default;
-        font-family: GothamBold;
         font-size: 1.4rem;
+        font-weight: 900;
         letter-spacing: 1.4rem;
         margin-left: -2rem;
         color: #df3636;
