@@ -87,7 +87,7 @@
 
   .rabisco1 {
     top: -10%;
-    left: -2px;
+    left: -7px;
 
     @media (min-width: 540px) {
       left: -10px;
@@ -116,7 +116,7 @@
     &::before {
       content: 'pessoas';
       margin-top: 8px;
-      margin-left: 20px;
+      margin-left: 15px;
       display: inline-block;
       transform: rotate(5deg);
     }
