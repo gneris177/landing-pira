@@ -1,0 +1,128 @@
+.footer {
+  .locaal {
+    margin: auto;
+    filter: brightness(0) invert(1);
+  }
+
+  .footer__local {
+    padding: 1rem 24px;
+    background: #222222;
+
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      @include text-default;
+      letter-spacing: initial;
+      font-family: networkfree;
+    }
+
+    .line {
+      height: 1px;
+      width: 170px;
+      background: #ffffff;
+    }
+  }
+
+  .footer__social {
+    padding: 0;
+    background: $color-red;
+    @media (min-width: 768px) {
+      padding: 0 24px;
+    }
+
+    .footer__social__container {
+      display: grid;
+      grid-template-areas:
+        'social social w-logo'
+        'w-email w-email w-logo';
+      justify-content: space-between;
+      @media (min-width: 540px) {
+        grid-template-areas:
+        'social  w-email w-logo';
+      }
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      grid-area: social;
+      margin: 0.4rem auto auto;
+      @media (min-width: 540px) {
+        margin: auto auto auto 0;
+      }
+
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        filter: brightness(0%);
+      }
+
+      .icon--instagram {
+        background-image: url(../images/instagram.png);
+      }
+
+      .icon--email {
+        background-image: url(../images/icon-mail.png);
+      }
+
+      .icon--linkedin {
+        background-image: url(../images/linkedin.png);
+      }
+
+      .icon--tiktok {
+        background-image: url(../images/tiktok.png);
+      }
+    }
+
+    .wrapper-email {
+      background-image: url(../images/decoration02.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      width: 240px;
+      min-height: 40px;
+      font-size: 1.2rem;
+      grid-area: w-email;
+      margin: auto auto 0.4rem;
+      @media (min-width: 540px) {
+        margin: auto;
+      }
+      
+    }
+
+    .wrapper-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 70px;
+      height: 100%;
+      width: 140px;
+      max-width: 80px;
+      background: #e5e1db;
+      margin: auto;
+      grid-area: w-logo;
+      @media (min-width: 540px) {
+        margin-right: 0;
+        max-width: initial;
+      }
+      .logo {
+        width: 40px;
+        margin: auto;
+      }
+    }
+  }
+}

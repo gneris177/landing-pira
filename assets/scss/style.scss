@@ -1,0 +1,25 @@
+@import './reset', './fonts', './variables', './home', './nav', './we',
+  './we-mobile', './video', './_footer.scss';
+
+.grid-layout {
+  @include grid-layout;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $color-black;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color-red;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color-red;
+  }
+}

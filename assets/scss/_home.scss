@@ -1,0 +1,139 @@
+.home {
+  padding: 0 24px;
+  position: relative;
+  background: $color-black;
+  z-index: 2;
+
+  .background-smoke {
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    height: 72%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/bg-fumaca.png);
+    z-index: -1;
+  }
+
+  .grid-layout {
+    .home__content {
+      display: flex;
+      justify-content: space-between;
+      height: calc(100vh - 230px);
+      @media (min-width: 768px) {
+        height: 100vh;
+      }
+
+      .home__intro {
+        display: grid;
+        grid-template-rows: 4px 1fr;
+
+        .text {
+          margin: auto 0;
+          @include text-default;
+          font-size: 1.2rem;
+          line-height: 3rem;
+
+          @media (min-width: 540px) {
+            font-size: 1.6rem;
+            line-height: 4rem;
+            letter-spacing: 1.8rem;
+          }
+
+          .bold {
+            font-family: GothamBold;
+          }
+        }
+      }
+
+      .logo {
+        margin: auto 0;
+        height: 45vh;
+        max-height: 70rem;
+        @media (min-width: 540px) {
+          max-width: initial;
+          height: 50vh;
+        }
+        @media (min-width: 768px) {
+          height: 90vh;
+        }
+      }
+    }
+  }
+
+  .dd {
+    position: absolute;
+    bottom: 40px;
+    @media (min-width: 540px) {
+      bottom: 50px;
+    }
+  }
+
+  .rabisco {
+    position: absolute;
+    display: block;
+    height: 50px;
+    min-width: 140px;
+
+    border-radius: 50%;
+    border: 2px solid $color-red;
+    transform: rotate(-6deg);
+    @media (min-width: 540px) {
+      height: 60px;
+      width: 250px;
+    }
+  }
+
+  .rabisco1 {
+    top: -10%;
+    left: -2px;
+
+    @media (min-width: 540px) {
+      left: -10px;
+    }
+  }
+
+  .rabisco2 {
+    top: -10%;
+    left: 12px;
+  }
+
+  .rabisco3 {
+    top: -11.5%;
+    left: 19px;
+  }
+
+  .rabisco4 {
+    border-right: 4px solid $color-red;
+    border-left: 4px solid $color-red;
+    top: -10%;
+    left: -2px;
+    @media (min-width: 540px) {
+      left: 10px;
+    }
+    display: flex;
+    &::before {
+      content: 'pessoas';
+      margin-top: 8px;
+      margin-left: 20px;
+      display: inline-block;
+      transform: rotate(5deg);
+    }
+  }
+
+  .cortado {
+    border-right: 4px solid $color-red;
+    border-left: 4px solid $color-red;
+    top: -10%;
+    border-radius: 50%;
+    border: 2px solid $color-red;
+    border-top: 0;
+    border-left: 0;
+    left: 10px;
+    display: block;
+    @media (min-width: 540px) {
+      left: 00px;
+    }
+  }
+}

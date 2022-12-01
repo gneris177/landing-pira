@@ -1,0 +1,18 @@
+$color-red: #fb3d3d;
+$color-gray: #101010;
+$color-black: #000000;
+$color-white: #ffffff;
+
+@mixin grid-layout {
+  margin: auto;
+  max-width: 1140px;
+}
+
+@mixin text-default {
+  font-family: Gotham;
+  font-size: 1.6rem;
+  letter-spacing: 0.8rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: #fff;
+}

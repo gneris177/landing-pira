@@ -1,0 +1,98 @@
+.home__nav {
+  @media (min-width: 992px) {
+    display: initial;
+    padding: 4rem 0rem 3rem;
+    border-right: 0.2rem solid $color-red;
+  }
+
+  .nav-list {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    top: 8rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background: $color-black;
+    min-width: 220px;
+    width: 30%;
+    height: 50vh;
+    z-index: 10;
+    @media (min-width: 992px) {
+      position: initial;
+      visibility: visible;
+      opacity: 1;
+      padding-right: 0.4rem;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 8rem;
+      width: initial;
+      height: initial;
+    }
+
+    .nav-list__item {
+      width: calc(100% - 24px);
+      padding: 2.8rem 0;
+      margin-right: 24px;
+      text-align: end;
+      border-bottom: 1.5px solid $color-red;
+      @media (min-width: 992px) {
+        padding: 0;
+        text-align: end;
+        border: none;
+        &:nth-child(1) {
+          a {
+            color: $color-red;
+            font-family: GothamBold;
+          }
+        }
+      }
+
+      a {
+        @include text-default;
+        color: #e5e1db;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+  }
+
+  .oppen {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+  }
+
+  .wrapper-icon-menu {
+    position: absolute;
+    top: 4rem;
+    right: 2.4rem;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .icon-menu {
+    width: 50px;
+    display: grid;
+    gap: 8px;
+    cursor: pointer;
+
+    span {
+      border-radius: 4px;
+      height: 6px;
+      background: $color-red;
+      &:nth-child(2) {
+        width: 32px;
+        margin: auto;
+        margin-right: 0;
+      }
+    }
+  }
+}

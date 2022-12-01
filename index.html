@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <main class="home">
+      <div class="grid-layout">
+        <div class="home__content">
+          <img src="./assets/images/ezgif.com-gif-maker.gif" class="logo"
+            alt="logo animada, a animação apresenta alguns modelos de logo  da agência Pira" />
+
+          <div class="home__intro">
+            <nav class="home__nav">
+              <div id="toggle-menu" class="wrapper-icon-menu">
+                <span class="icon-menu">
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <ul id="nav-list" class="nav-list">
+                <li class="nav-list__item"><a href="#home">Home</a></li>
+                <li class="nav-list__item"><a href="#brands">Marcas</a></li>
+                <li class="nav-list__item"><a href="#contact">Contato</a></li>
+              </ul>
+            </nav>
+
+            <p class="text" style="position: relative;">
+              Nosso
+              <br>
+              propósito
+              <br>
+              é alimentar
+              <br>
+              <span class="bold">a chama</span>
+              <br>
+              que conecta
+              <br>
+              as
+              <span class="dd">
+                <span class="rabisco rabisco1"></span>
+                <span class="rabisco rabisco4"></span>
+                <span class="rabisco cortado"></span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="background-smoke"></div>
+    </main>
+
+    <section class="we">
+      <div class="grid-layout">
+        <div class="we__content">
+
+          <div class="we__wrapper-text">
+            <p class="text">
+              conectamos
+              <br />
+              marcas a comunidades
+              <br />
+              digitais
+            </p>
+          </div>
+
+          <article class="we__artilce">
+            <h3 class="title">
+              através de
+              <br />
+              experiências
+              <br />
+              geradoras
+              <br />
+              de conteúdo.
+            </h3>
+            <p class="text" style="letter-spacing: 0.2rem;">
+              Através de metodologias próprias e métricas, criamos ideias
+              efetivas, poderosas e recorrentes, gerando alcance e engajamento
+              para marcas.
+            </p>
+            <span class="arrow-decoration arrow-decoration02"></span>
+          </article>
+        </div>
+        <span class="arrow-decoration"></span>
+      </div>
+    </section>
+
+    <section class="we-mobile">
+      <div class="grid-layout">
+        <article class="we-mobile__artilce">
+          <h3 class="title">
+            através de experiências
+            <br />
+            geradoras de conteúdo.
+          </h3>
+          <p class="text">
+            Através de metodologias próprias e métricas,
+            <br />
+            criamos ideias efetivas, poderosas e recorrentes,
+            <br />
+            gerando alcance e engajamento para marcas.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="video-area" class="video-area">
+      <div class="container">
+        <div class="decoration decoration--01"></div>
+        <div class="decoration decoration--02"></div>
+        <div class="wrapper-video">
+          <video class="video" src="https://www.w3schools.com/tags/movie.mp4" controls></video>
+        </div>
+        <div class="decoration decoration--03"></div>
+        <div class="decoration decoration--04"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__local">
+        <div class="grid-layout">
+          <div>
+            SP
+            <div style="display: grid; gap: 3px; margin-top: -10px;">
+              <img class="locaal" src="https://img.icons8.com/ios-filled/12/ffffff/marker.png" />
+              <div class="line"></div>
+            </div>
+            SSA
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__social" id="contact">
+        <div class="grid-layout">
+          <div class="footer__social__container">
+            <ul class="list-social">
+              <li>
+                <a href="https://www.tiktok.com/@agenciapira?_t=8WocqMbXgmr&_r=1" target="_blank"
+                  class="icon icon--tiktok"></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/agenciapira/?igshid=YmMyMTA2M2Y%3D" target="_blank"
+                  class="icon icon--instagram"></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/agenciapira" target="_blank" class="icon icon--linkedin"></a>
+              </li>
+            </ul>
+
+            <span class="wrapper-email" style="font-weight: 600; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+              <img src="https://img.icons8.com/material/15/1A1A1A/new-post--v1.png" alt="" />
+              contato@agenciapira.com
+            </span>
+
+            <div class="wrapper-logo">
+              <div>
+                <img class="logo" src="./assets/images/logo-black.png" alt="logo agência pira" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script>
+  window.addEventListener('load', () => {
+    const videoArea = document.querySelector('#video-area');
+    console.log(videoArea.scrollWidth - videoArea.clientWidth);
+    console.log((videoArea.scrollWidth - videoArea.clientWidth) / 2);
+    videoArea.scrollLeft = (videoArea.scrollWidth - videoArea.clientWidth) / 2;
+  });
+
+  const menuButton = document.querySelector('#toggle-menu');
+
+  const toggleMenu = () => {
+    const navList = document.querySelector("#nav-list");
+    navList.classList.toggle("oppen");
+  };
+
+  menuButton.onclick = toggleMenu;
+</script>
+
+</html>
