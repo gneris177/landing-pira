@@ -195,7 +195,7 @@ html {
 @media (min-width: 992px) {
   .home__nav {
     display: initial;
-    padding: 4rem 0rem 3rem;
+    padding: 4rem 0rem 4rem;
     border-right: 0.2rem solid #fb3d3d;
   }
 }
@@ -440,6 +440,7 @@ html {
   display: flex;
   align-items: center;
   height: 70vh;
+  min-height: 500px;
   background-image: url(../images/bg-video.jpg);
   background-size: cover;
   background-repeat: no-repeat;
