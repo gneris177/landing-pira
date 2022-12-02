@@ -41,7 +41,7 @@ html {
 }
 @font-face {
   font-family: GothamBold;
-  src: url(../fonts/gotham-6-cufonfonts/GothamBold.ttf);
+  src: url(../fonts/gotham-6-cufonfonts/GothamBold.otf);
 }
 @font-face {
   font-family: networkfree;
