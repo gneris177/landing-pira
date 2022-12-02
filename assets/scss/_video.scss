@@ -61,12 +61,12 @@
         content: 'Conheça \a Nossa'  url(../images/for-your.png);
         max-width: 100px;
         @include text-default;
-        font-family: GothamBold;
         font-size: 1.4rem;
+        font-family: GothamBold;
+        color: $color-red;
         letter-spacing: 1.4rem;
         line-height: 3.8rem;
         margin-left: -2rem;
-        color: #df3636;
         display: flex;
         align-items: center;
       }
