@@ -439,17 +439,11 @@ html {
   border: 1px #df3636 solid;
   display: flex;
   align-items: center;
-  min-height: 500px;
-  height: 7 0vh;
+  height: 70vh;
   background-image: url(../images/bg-video.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-@media (min-width: 1600px) {
-  .video-area .container .wrapper-video {
-    min-height: 700px;
-  }
 }
 .video-area .container .video {
   display: none;
@@ -482,16 +476,18 @@ html {
   break-after: always;
 }
 .video-area .container .decoration--03::before {
-  content: "Conheça \aNossa       " url(../images/for-your.png);
+  content: "Conheça \aNossa" url(../images/for-your.png);
+  max-width: 100px;
   font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
   line-height: 2.4rem;
   text-transform: uppercase;
   color: #fff;
+  font-family: GothamBold;
   font-size: 1.4rem;
-  font-weight: 900;
   letter-spacing: 1.4rem;
+  line-height: 3.8rem;
   margin-left: -2rem;
   color: #df3636;
   display: flex;
@@ -500,58 +496,6 @@ html {
 .video-area .container .decoration--04 {
   background-image: url(../images/decoration04.png);
   background-size: cover;
-}
-.video-area .square-decoration {
-  height: 65vh;
-  width: 100%;
-  max-width: 300px;
-}
-@media (min-width: 992px) {
-  .video-area .square-decoration {
-    display: initial;
-    max-width: initial;
-  }
-}
-.video-area .square-decoration--01 {
-  margin-left: -2px;
-  background-image: url(../images/01.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1px;
-  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.3);
-}
-.video-area .square-decoration--02 {
-  position: relative;
-  padding-top: 10px;
-  text-align: center;
-}
-.video-area .square-decoration--02 .arrow {
-  position: absolute;
-  width: 100px;
-  bottom: -40px;
-  right: 40px;
-  filter: brightness(0) invert(1);
-}
-.video-area .square-decoration--02 img {
-  width: 90%;
-}
-.video-area .square-decoration--03 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.video-area .square-decoration--03 .text {
-  margin-left: -17px;
-  color: #df3636;
-}
-.video-area .square-decoration--04 {
-  margin-right: -2px;
-  border-left: none;
-  background-image: url(../images/2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1px;
-  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
 .footer .locaal {
