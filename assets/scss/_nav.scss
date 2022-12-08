@@ -39,6 +39,7 @@
       text-align: end;
       border-bottom: 1.5px solid $color-red;
       @include responsive-lg {
+        margin: 0;
         padding: 0;
         text-align: end;
         border: none;

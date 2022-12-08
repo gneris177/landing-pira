@@ -244,6 +244,7 @@ html {
 }
 @media screen and (min-width: 992px) {
   .home__nav .nav-list .nav-list__item {
+    margin: 0;
     padding: 0;
     text-align: end;
     border: none;
@@ -465,6 +466,7 @@ html {
 .video-area .container .decoration--01 {
   background-image: url(../images/decoration01.png);
   background-size: cover;
+  margin-left: -0.4rem;
 }
 .video-area .container .decoration--02 {
   padding: 1.4rem 0.8rem;
@@ -506,12 +508,9 @@ html {
 .video-area .container .decoration--04 {
   background-image: url(../images/decoration04.png);
   background-size: cover;
+  margin-right: -0.4rem;
 }
 
-.footer .locaal {
-  margin: auto;
-  filter: brightness(0) invert(1);
-}
 .footer .footer__local {
   padding: 1rem 24px;
   background: #222222;
@@ -581,6 +580,8 @@ html {
   font-size: 1.2rem;
   grid-area: w-email;
   margin: auto auto 0.4rem;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 @media screen and (min-width: 576px) {
   .footer .footer__social .wrapper-email {
@@ -617,23 +618,39 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
-  filter: brightness(0%);
 }
 
 .icon--instagram {
   background-image: url(../images/instagram.png);
+  filter: brightness(0%);
 }
 
 .icon--email {
   background-image: url(../images/icon-mail.png);
+  filter: brightness(0%);
 }
 
 .icon--linkedin {
   background-image: url(../images/linkedin.png);
+  filter: brightness(0%);
 }
 
 .icon--tiktok {
   background-image: url(../images/tiktok.png);
+  filter: brightness(0%);
+}
+
+.icon--location {
+  margin: auto;
+  background-image: url(https://img.icons8.com/ios-filled/100/ffffff/marker.png);
+  width: 12px;
+  height: 12px;
+}
+
+.icon--email {
+  background-image: url(https://img.icons8.com/ios-glyphs/100/null/secured-letter--v1.png);
+  width: 15px;
+  height: 15px;
 }
 
 .grid-layout {

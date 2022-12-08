@@ -1,9 +1,4 @@
 .footer {
-  .locaal {
-    margin: auto;
-    filter: brightness(0) invert(1);
-  }
-
   .footer__local {
     padding: 1rem 24px;
     background: #222222;
@@ -69,6 +64,9 @@
       font-size: $font-small;
       grid-area: w-email;
       margin: auto auto 0.4rem;
+      font-weight: 500;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
       @include responsive-sm {
         margin: auto;
       }

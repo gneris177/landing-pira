@@ -5,21 +5,37 @@
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
-  filter: brightness(0%);
 }
 
 .icon--instagram {
   background-image: url(../images/instagram.png);
+  filter: brightness(0%);
 }
 
 .icon--email {
   background-image: url(../images/icon-mail.png);
+  filter: brightness(0%);
 }
 
 .icon--linkedin {
   background-image: url(../images/linkedin.png);
+  filter: brightness(0%);
 }
 
 .icon--tiktok {
   background-image: url(../images/tiktok.png);
+  filter: brightness(0%);
+}
+
+.icon--location {
+  margin: auto;
+  background-image: url(https://img.icons8.com/ios-filled/100/ffffff/marker.png);
+  width: 12px;
+  height: 12px;
+}
+
+.icon--email {
+  background-image: url(https://img.icons8.com/ios-glyphs/100/null/secured-letter--v1.png);
+  width: 15px;
+  height: 15px;
 }
