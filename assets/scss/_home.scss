@@ -32,6 +32,7 @@
         grid-template-rows: 4px 1fr;
 
         .text {
+          position: relative;
           margin: auto 0;
           @include text-default;
           font-size: $font-small;

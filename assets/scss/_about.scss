@@ -34,7 +34,7 @@
       .text {
         @include text-bold;
         padding: 4rem 0;
-        font-size: $font-small;
+        font-size: $font-regular ;
         line-height: 2.8rem;
         color: #000;
       }
@@ -55,6 +55,10 @@
         font-family: GothamBold;
         color: $color-red;
         margin-bottom: 2.8rem;
+      }
+
+      .text {
+        letter-spacing: 0.2rem;
       }
     }
   }

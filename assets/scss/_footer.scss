@@ -7,15 +7,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.2rem;
       @include text-default;
       letter-spacing: initial;
       font-family: networkfree;
+      text-transform: lowercase;
+      font-size: 2rem;
     }
 
     .line {
       height: 1px;
-      width: 170px;
+      width: 140px;
       background: #ffffff;
     }
   }
