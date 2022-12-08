@@ -3,6 +3,45 @@ $color-gray: #101010;
 $color-black: #000000;
 $color-white: #ffffff;
 
+$font-large: 1.6rem;
+$font-regular: 1.4rem;
+$font-small: 1.2rem;
+
+$gap-0: 0rem;
+$gap-1: 0.8rem;
+$gap-2: 1.6rem;
+$gap-3: 2.4rem;
+$gap-4: 3.2rem;
+$gap-5: 4.8rem;
+$gap-6: 6.4rem;
+$gap-7: 7.2rem;
+$gap-8: 9.6rem;
+$gap-9: 12.8rem;
+
+@mixin responsive-xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin responsive-lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin responsive-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin responsive-sm {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
 @mixin grid-layout {
   margin: auto;
   max-width: 1140px;
@@ -15,4 +54,9 @@ $color-white: #ffffff;
   line-height: 2.4rem;
   text-transform: uppercase;
   color: #fff;
+}
+
+@mixin text-bold {
+  @include text-default;
+  font-family: GothamBold;
 }

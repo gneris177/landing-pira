@@ -1,5 +1,5 @@
-@import './reset', './fonts', './variables', './home', './nav', './we',
-  './we-mobile', './video', './_footer.scss';
+@import './reset', './fonts', './variables', './home', './nav', './about',
+  './about-mobile', './video', './_footer', './icons';
 
 .grid-layout {
   @include grid-layout;

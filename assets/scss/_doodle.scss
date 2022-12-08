@@ -1,0 +1,74 @@
+.dd {
+  position: absolute;
+  bottom: 40px;
+  @include responsive-sm {
+    bottom: 52px;
+  }
+}
+
+.rabisco {
+  position: absolute;
+  display: block;
+  height: 50px;
+  min-width: 140px;
+
+  border-radius: 50%;
+  border: 2px solid $color-red;
+  transform: rotate(-6deg);
+  @include responsive-sm {
+    height: 60px;
+    width: 250px;
+  }
+}
+
+.rabisco1 {
+  top: -10%;
+  left: -7px;
+
+  @include responsive-sm {
+    left: -10px;
+  }
+}
+
+.rabisco2 {
+  top: -10%;
+  left: 12px;
+}
+
+.rabisco3 {
+  top: -11.5%;
+  left: 19px;
+}
+
+.rabisco4 {
+  border-right: 4px solid $color-red;
+  border-left: 4px solid $color-red;
+  top: -10%;
+  left: -2px;
+  @include responsive-sm {
+    left: 10px;
+  }
+  display: flex;
+  &::before {
+    content: 'pessoas';
+    margin-top: 6px;
+    margin-left: 18px;
+    display: inline-block;
+    transform: rotate(4deg);
+  }
+}
+
+.cortado {
+  border-right: 4px solid $color-red;
+  border-left: 4px solid $color-red;
+  top: -10%;
+  border-radius: 50%;
+  border: 2px solid $color-red;
+  border-top: 0;
+  border-left: 0;
+  left: 10px;
+  display: block;
+  @include responsive-sm {
+    left: 00px;
+  }
+}

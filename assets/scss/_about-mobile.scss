@@ -1,16 +1,16 @@
-.we-mobile {
+.about-mobile {
   text-align: end;
   padding: 6rem 24px;
   background: $color-gray;
-  @media (min-width: 768px) {
+  @include responsive-md {
     display: none;
   }
 
-  .we-mobile__artilce {
+  .about-mobile__artilce {
     .title,
     .text {
       @include text-default;
-      font-size: 1.2rem;
+      font-size: $font-small;
       margin-right: -0.4rem;
     }
 

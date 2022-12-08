@@ -1,4 +1,4 @@
-.we {
+.about {
   position: relative;
   padding: 0 24px;
   background: linear-gradient(
@@ -8,7 +8,7 @@
     #df3636 20%,
     #df3636 100%
   );
-  @media (min-width: 992px) {
+  @include responsive-lg {
     background: linear-gradient(
       to right,
       #e5e1db 0%,
@@ -18,40 +18,39 @@
     );
   }
 
-  .we__content {
+  .about__content {
     display: grid;
     align-items: center;
-    @media (min-width: 768px) {
+    @include responsive-md {
       grid-template-columns: 8fr minmax(300px, 5fr);
     }
 
-    .we__wrapper-text {
+    .about__wrapper-text {
       display: flex;
       height: 100%;
       align-items: center;
       background: #e5e1db;
 
       .text {
-        @include text-default;
-        font-family: GothamBold;
+        @include text-bold;
         padding: 4rem 0;
-        font-size: 1.2rem;
+        font-size: $font-small;
         line-height: 2.8rem;
         color: #000;
       }
     }
   }
 
-  .we__artilce {
+  .about__artilce {
     display: none;
-    @media (min-width: 768px) {
+    @include responsive-md {
       position: relative;
       display: initial;
       text-align: end;
       background: $color-gray;
       padding: 4rem 2rem;
       @include text-default;
-      font-size: 1.2rem;
+      font-size: $font-small;
       .title {
         font-family: GothamBold;
         color: $color-red;
@@ -74,7 +73,7 @@
     background-size: contain;
     margin: auto;
   }
-  @media (min-width: 768px) {
+  @include responsive-md {
     .arrow-decoration {
       display: none;
     }
@@ -90,7 +89,7 @@
     margin: 0;
     transform: rotate(322deg);
   }
-  @media (min-width: 768px) {
+  @include responsive-md {
     .arrow-decoration02 {
       display: initial;
     }

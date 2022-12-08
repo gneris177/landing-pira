@@ -1,3 +1,5 @@
+@import './doodle';
+
 .home {
   padding: 0 24px;
   position: relative;
@@ -21,7 +23,7 @@
       display: flex;
       justify-content: space-between;
       height: calc(100vh - 230px);
-      @media (min-width: 768px) {
+      @include responsive-md {
         height: 100vh;
       }
 
@@ -32,15 +34,13 @@
         .text {
           margin: auto 0;
           @include text-default;
-          font-size: 1.2rem;
+          font-size: $font-small;
           line-height: 3rem;
-
-          @media (min-width: 540px) {
-            font-size: 1.6rem;
+          @include responsive-sm {
+            font-size: $font-large;
             line-height: 4rem;
             letter-spacing: 1.8rem;
           }
-
           .bold {
             font-family: GothamBold;
           }
@@ -51,89 +51,14 @@
         margin: auto 0;
         height: 45vh;
         max-height: 70rem;
-        @media (min-width: 540px) {
+        @include responsive-sm {
           max-width: initial;
           height: 50vh;
         }
-        @media (min-width: 768px) {
+        @include responsive-md {
           height: 90vh;
         }
       }
-    }
-  }
-
-  .dd {
-    position: absolute;
-    bottom: 40px;
-    @media (min-width: 540px) {
-      bottom: 52px;
-    }
-  }
-
-  .rabisco {
-    position: absolute;
-    display: block;
-    height: 50px;
-    min-width: 140px;
-
-    border-radius: 50%;
-    border: 2px solid $color-red;
-    transform: rotate(-6deg);
-    @media (min-width: 540px) {
-      height: 60px;
-      width: 250px;
-    }
-  }
-
-  .rabisco1 {
-    top: -10%;
-    left: -7px;
-
-    @media (min-width: 540px) {
-      left: -10px;
-    }
-  }
-
-  .rabisco2 {
-    top: -10%;
-    left: 12px;
-  }
-
-  .rabisco3 {
-    top: -11.5%;
-    left: 19px;
-  }
-
-  .rabisco4 {
-    border-right: 4px solid $color-red;
-    border-left: 4px solid $color-red;
-    top: -10%;
-    left: -2px;
-    @media (min-width: 540px) {
-      left: 10px;
-    }
-    display: flex;
-    &::before {
-      content: 'pessoas';
-      margin-top: 6px;
-      margin-left: 18px;
-      display: inline-block;
-      transform: rotate(4deg);
-    }
-  }
-
-  .cortado {
-    border-right: 4px solid $color-red;
-    border-left: 4px solid $color-red;
-    top: -10%;
-    border-radius: 50%;
-    border: 2px solid $color-red;
-    border-top: 0;
-    border-left: 0;
-    left: 10px;
-    display: block;
-    @media (min-width: 540px) {
-      left: 00px;
     }
   }
 }

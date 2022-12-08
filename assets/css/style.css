@@ -37,16 +37,99 @@ html {
 
 @font-face {
   font-family: Gotham;
-  src: url(../fonts/gotham-6-cufonfonts/GothamLight.otf);
+  src: url(../fonts/GothamLight.otf);
 }
 @font-face {
   font-family: GothamBold;
-  src: url(../fonts/gotham-6-cufonfonts/GothamBold.otf);
+  src: url(../fonts/GothamBold.otf);
 }
 @font-face {
   font-family: networkfree;
   src: url(../fonts/NetworkFreeVersion.ttf);
 }
+.dd {
+  position: absolute;
+  bottom: 40px;
+}
+@media screen and (min-width: 576px) {
+  .dd {
+    bottom: 52px;
+  }
+}
+
+.rabisco {
+  position: absolute;
+  display: block;
+  height: 50px;
+  min-width: 140px;
+  border-radius: 50%;
+  border: 2px solid #fb3d3d;
+  transform: rotate(-6deg);
+}
+@media screen and (min-width: 576px) {
+  .rabisco {
+    height: 60px;
+    width: 250px;
+  }
+}
+
+.rabisco1 {
+  top: -10%;
+  left: -7px;
+}
+@media screen and (min-width: 576px) {
+  .rabisco1 {
+    left: -10px;
+  }
+}
+
+.rabisco2 {
+  top: -10%;
+  left: 12px;
+}
+
+.rabisco3 {
+  top: -11.5%;
+  left: 19px;
+}
+
+.rabisco4 {
+  border-right: 4px solid #fb3d3d;
+  border-left: 4px solid #fb3d3d;
+  top: -10%;
+  left: -2px;
+  display: flex;
+}
+@media screen and (min-width: 576px) {
+  .rabisco4 {
+    left: 10px;
+  }
+}
+.rabisco4::before {
+  content: "pessoas";
+  margin-top: 6px;
+  margin-left: 18px;
+  display: inline-block;
+  transform: rotate(4deg);
+}
+
+.cortado {
+  border-right: 4px solid #fb3d3d;
+  border-left: 4px solid #fb3d3d;
+  top: -10%;
+  border-radius: 50%;
+  border: 2px solid #fb3d3d;
+  border-top: 0;
+  border-left: 0;
+  left: 10px;
+  display: block;
+}
+@media screen and (min-width: 576px) {
+  .cortado {
+    left: 0px;
+  }
+}
+
 .home {
   padding: 0 24px;
   position: relative;
@@ -69,7 +152,7 @@ html {
   justify-content: space-between;
   height: calc(100vh - 230px);
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .home .grid-layout .home__content {
     height: 100vh;
   }
@@ -89,7 +172,7 @@ html {
   font-size: 1.2rem;
   line-height: 3rem;
 }
-@media (min-width: 540px) {
+@media screen and (min-width: 576px) {
   .home .grid-layout .home__content .home__intro .text {
     font-size: 1.6rem;
     line-height: 4rem;
@@ -104,95 +187,19 @@ html {
   height: 45vh;
   max-height: 70rem;
 }
-@media (min-width: 540px) {
+@media screen and (min-width: 576px) {
   .home .grid-layout .home__content .logo {
     max-width: initial;
     height: 50vh;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .home .grid-layout .home__content .logo {
     height: 90vh;
   }
 }
-.home .dd {
-  position: absolute;
-  bottom: 40px;
-}
-@media (min-width: 540px) {
-  .home .dd {
-    bottom: 52px;
-  }
-}
-.home .rabisco {
-  position: absolute;
-  display: block;
-  height: 50px;
-  min-width: 140px;
-  border-radius: 50%;
-  border: 2px solid #fb3d3d;
-  transform: rotate(-6deg);
-}
-@media (min-width: 540px) {
-  .home .rabisco {
-    height: 60px;
-    width: 250px;
-  }
-}
-.home .rabisco1 {
-  top: -10%;
-  left: -7px;
-}
-@media (min-width: 540px) {
-  .home .rabisco1 {
-    left: -10px;
-  }
-}
-.home .rabisco2 {
-  top: -10%;
-  left: 12px;
-}
-.home .rabisco3 {
-  top: -11.5%;
-  left: 19px;
-}
-.home .rabisco4 {
-  border-right: 4px solid #fb3d3d;
-  border-left: 4px solid #fb3d3d;
-  top: -10%;
-  left: -2px;
-  display: flex;
-}
-@media (min-width: 540px) {
-  .home .rabisco4 {
-    left: 10px;
-  }
-}
-.home .rabisco4::before {
-  content: "pessoas";
-  margin-top: 6px;
-  margin-left: 18px;
-  display: inline-block;
-  transform: rotate(4deg);
-}
-.home .cortado {
-  border-right: 4px solid #fb3d3d;
-  border-left: 4px solid #fb3d3d;
-  top: -10%;
-  border-radius: 50%;
-  border: 2px solid #fb3d3d;
-  border-top: 0;
-  border-left: 0;
-  left: 10px;
-  display: block;
-}
-@media (min-width: 540px) {
-  .home .cortado {
-    left: 0px;
-  }
-}
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .home__nav {
     display: initial;
     padding: 4rem 0rem 4rem;
@@ -215,7 +222,7 @@ html {
   height: 50vh;
   z-index: 10;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .home__nav .nav-list {
     position: initial;
     visibility: visible;
@@ -235,7 +242,7 @@ html {
   text-align: end;
   border-bottom: 1.5px solid #fb3d3d;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .home__nav .nav-list .nav-list__item {
     padding: 0;
     text-align: end;
@@ -259,6 +266,7 @@ html {
   text-decoration: none;
 }
 .home__nav .nav-list .nav-list__item a:hover {
+  font-weight: bold;
   color: #fb3d3d;
 }
 .home__nav .oppen {
@@ -271,7 +279,7 @@ html {
   top: 4rem;
   right: 2.4rem;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .home__nav .wrapper-icon-menu {
     display: none;
   }
@@ -293,32 +301,32 @@ html {
   margin-right: 0;
 }
 
-.we {
+.about {
   position: relative;
   padding: 0 24px;
   background: linear-gradient(to right, #e5e1db 0%, #e5e1db calc(100% - 24px), #df3636 20%, #df3636 100%);
 }
-@media (min-width: 992px) {
-  .we {
+@media screen and (min-width: 992px) {
+  .about {
     background: linear-gradient(to right, #e5e1db 0%, #e5e1db 50%, #df3636 50%, #df3636 100%);
   }
 }
-.we .we__content {
+.about .about__content {
   display: grid;
   align-items: center;
 }
-@media (min-width: 768px) {
-  .we .we__content {
+@media screen and (min-width: 768px) {
+  .about .about__content {
     grid-template-columns: 8fr minmax(300px, 5fr);
   }
 }
-.we .we__content .we__wrapper-text {
+.about .about__content .about__wrapper-text {
   display: flex;
   height: 100%;
   align-items: center;
   background: #e5e1db;
 }
-.we .we__content .we__wrapper-text .text {
+.about .about__content .about__wrapper-text .text {
   font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
@@ -331,11 +339,11 @@ html {
   line-height: 2.8rem;
   color: #000;
 }
-.we .we__artilce {
+.about .about__artilce {
   display: none;
 }
-@media (min-width: 768px) {
-  .we .we__artilce {
+@media screen and (min-width: 768px) {
+  .about .about__artilce {
     position: relative;
     display: initial;
     text-align: end;
@@ -349,13 +357,13 @@ html {
     color: #fff;
     font-size: 1.2rem;
   }
-  .we .we__artilce .title {
+  .about .about__artilce .title {
     font-family: GothamBold;
     color: #fb3d3d;
     margin-bottom: 2.8rem;
   }
 }
-.we .arrow-decoration {
+.about .arrow-decoration {
   display: initial;
   height: 200px;
   background-image: url(../images/arrow_b.png);
@@ -369,12 +377,12 @@ html {
   background-size: contain;
   margin: auto;
 }
-@media (min-width: 768px) {
-  .we .arrow-decoration {
+@media screen and (min-width: 768px) {
+  .about .arrow-decoration {
     display: none;
   }
 }
-.we .arrow-decoration02 {
+.about .arrow-decoration02 {
   display: none;
   top: 20%;
   bottom: 0;
@@ -384,24 +392,24 @@ html {
   margin: 0;
   transform: rotate(322deg);
 }
-@media (min-width: 768px) {
-  .we .arrow-decoration02 {
+@media screen and (min-width: 768px) {
+  .about .arrow-decoration02 {
     display: initial;
   }
 }
 
-.we-mobile {
+.about-mobile {
   text-align: end;
   padding: 6rem 24px;
   background: #101010;
 }
-@media (min-width: 768px) {
-  .we-mobile {
+@media screen and (min-width: 768px) {
+  .about-mobile {
     display: none;
   }
 }
-.we-mobile .we-mobile__artilce .title,
-.we-mobile .we-mobile__artilce .text {
+.about-mobile .about-mobile__artilce .title,
+.about-mobile .about-mobile__artilce .text {
   font-family: Gotham;
   font-size: 1.6rem;
   letter-spacing: 0.8rem;
@@ -411,12 +419,12 @@ html {
   font-size: 1.2rem;
   margin-right: -0.4rem;
 }
-.we-mobile .we-mobile__artilce .title {
+.about-mobile .about-mobile__artilce .title {
   font-family: GothamBold;
   margin-bottom: 2rem;
   color: #fb3d3d;
 }
-.we-mobile .we-mobile__artilce .text {
+.about-mobile .about-mobile__artilce .text {
   letter-spacing: 0.4rem;
 }
 
@@ -531,7 +539,7 @@ html {
   padding: 0;
   background: #fb3d3d;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer .footer__social {
     padding: 0 24px;
   }
@@ -541,7 +549,7 @@ html {
   grid-template-areas: "social social w-logo" "w-email w-email w-logo";
   justify-content: space-between;
 }
-@media (min-width: 540px) {
+@media screen and (min-width: 576px) {
   .footer .footer__social .footer__social__container {
     grid-template-areas: "social  w-email w-logo";
   }
@@ -554,31 +562,10 @@ html {
   grid-area: social;
   margin: 0.4rem auto auto;
 }
-@media (min-width: 540px) {
+@media screen and (min-width: 576px) {
   .footer .footer__social ul {
     margin: auto auto auto 0;
   }
-}
-.footer .footer__social ul .icon {
-  width: 40px;
-  height: 40px;
-  background-size: cover;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  filter: brightness(0%);
-}
-.footer .footer__social ul .icon--instagram {
-  background-image: url(../images/instagram.png);
-}
-.footer .footer__social ul .icon--email {
-  background-image: url(../images/icon-mail.png);
-}
-.footer .footer__social ul .icon--linkedin {
-  background-image: url(../images/linkedin.png);
-}
-.footer .footer__social ul .icon--tiktok {
-  background-image: url(../images/tiktok.png);
 }
 .footer .footer__social .wrapper-email {
   background-image: url(../images/decoration02.png);
@@ -595,7 +582,7 @@ html {
   grid-area: w-email;
   margin: auto auto 0.4rem;
 }
-@media (min-width: 540px) {
+@media screen and (min-width: 576px) {
   .footer .footer__social .wrapper-email {
     margin: auto;
   }
@@ -612,7 +599,7 @@ html {
   margin: auto;
   grid-area: w-logo;
 }
-@media (min-width: 540px) {
+@media screen and (min-width: 576px) {
   .footer .footer__social .wrapper-logo {
     margin-right: 0;
     max-width: initial;
@@ -621,6 +608,32 @@ html {
 .footer .footer__social .wrapper-logo .logo {
   width: 40px;
   margin: auto;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  filter: brightness(0%);
+}
+
+.icon--instagram {
+  background-image: url(../images/instagram.png);
+}
+
+.icon--email {
+  background-image: url(../images/icon-mail.png);
+}
+
+.icon--linkedin {
+  background-image: url(../images/linkedin.png);
+}
+
+.icon--tiktok {
+  background-image: url(../images/tiktok.png);
 }
 
 .grid-layout {

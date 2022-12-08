@@ -62,7 +62,7 @@
         content: 'Conheça \a Nossa'url(../images/for-your.png);
         max-width: 100px;
         @include text-default;
-        font-size: 1.4rem;
+        font-size: $font-regular;
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         color: $color-red;

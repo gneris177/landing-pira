@@ -8,7 +8,6 @@
     padding: 1rem 24px;
     background: #222222;
 
-
     div {
       display: flex;
       align-items: center;
@@ -29,7 +28,7 @@
   .footer__social {
     padding: 0;
     background: $color-red;
-    @media (min-width: 768px) {
+    @include responsive-md {
       padding: 0 24px;
     }
 
@@ -39,9 +38,8 @@
         'social social w-logo'
         'w-email w-email w-logo';
       justify-content: space-between;
-      @media (min-width: 540px) {
-        grid-template-areas:
-        'social  w-email w-logo';
+      @include responsive-sm {
+        grid-template-areas: 'social  w-email w-logo';
       }
     }
 
@@ -52,35 +50,8 @@
       gap: 1rem;
       grid-area: social;
       margin: 0.4rem auto auto;
-      @media (min-width: 540px) {
+      @include responsive-sm {
         margin: auto auto auto 0;
-      }
-
-
-      .icon {
-        width: 40px;
-        height: 40px;
-        background-size: cover;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: block;
-        filter: brightness(0%);
-      }
-
-      .icon--instagram {
-        background-image: url(../images/instagram.png);
-      }
-
-      .icon--email {
-        background-image: url(../images/icon-mail.png);
-      }
-
-      .icon--linkedin {
-        background-image: url(../images/linkedin.png);
-      }
-
-      .icon--tiktok {
-        background-image: url(../images/tiktok.png);
       }
     }
 
@@ -95,13 +66,12 @@
       gap: 0.4rem;
       width: 240px;
       min-height: 40px;
-      font-size: 1.2rem;
+      font-size: $font-small;
       grid-area: w-email;
       margin: auto auto 0.4rem;
-      @media (min-width: 540px) {
+      @include responsive-sm {
         margin: auto;
       }
-      
     }
 
     .wrapper-logo {
@@ -115,7 +85,7 @@
       background: #e5e1db;
       margin: auto;
       grid-area: w-logo;
-      @media (min-width: 540px) {
+      @include responsive-sm {
         margin-right: 0;
         max-width: initial;
       }
