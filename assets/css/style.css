@@ -290,6 +290,7 @@ html {
 }
 
 .about {
+  display: none;
   position: relative;
   padding: 0 24px;
   background: linear-gradient(to right, #e5e1db 0%, #e5e1db calc(100% - 24px), #df3636 20%, #df3636 100%);
@@ -390,6 +391,7 @@ html {
 }
 
 .about-mobile {
+  display: none;
   text-align: end;
   padding: 6rem 24px;
   background: #101010;
@@ -420,6 +422,7 @@ html {
 }
 
 .video-area {
+  display: none;
   background: #000000;
   overflow-x: auto;
   padding: 4rem 0;
@@ -527,6 +530,7 @@ html {
   background: #ffffff;
 }
 .footer .footer__social {
+  display: none;
   padding: 0;
   background: #fb3d3d;
 }
