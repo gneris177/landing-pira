@@ -121,6 +121,12 @@ html {
   position: relative;
   background: #000000;
   z-index: 2;
+  height: 100vh;
+}
+@media(max-width: 767px) {
+  .home {
+    display: flex;
+  }
 }
 .home .background-smoke {
   position: absolute;
@@ -652,6 +658,7 @@ html {
 .grid-layout {
   margin: auto;
   max-width: 1140px;
+  width: 100%;
 }
 
 html {
