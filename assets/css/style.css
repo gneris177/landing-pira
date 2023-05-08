@@ -536,7 +536,7 @@ html {
   background: #ffffff;
 }
 .footer .footer__social {
-  display: none;
+  /* display: none; */
   padding: 0;
   background: #fb3d3d;
 }
@@ -596,8 +596,7 @@ html {
   justify-content: center;
   min-height: 70px;
   height: 100%;
-  width: 140px;
-  max-width: 80px;
+  width: 80px;
   background: #e5e1db;
   margin: auto;
   grid-area: w-logo;
