@@ -1,5 +1,5 @@
 @import './reset', './fonts', './variables', './home', './nav',
-  './about-mobile', './_footer', './icons';
+  './about-mobile', './_footer', './icons', './video-area';
 
 .grid-layout {
   @include grid-layout;
@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
