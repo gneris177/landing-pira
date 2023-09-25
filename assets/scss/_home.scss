@@ -63,3 +63,33 @@
     }
   }
 }
+
+.video-area {
+  margin-top: 6rem;
+  padding: 160px 0 160px;
+  position: relative;
+  text-align: center;
+
+  .wrapper-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    iframe {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .efect {
+    // background: #fb3d3d;
+    // animation: shine2 12s infinite;
+    // @keyframes shine2 {
+    //   0% { filter: drop-shadow(0px 0px 10px #ffffffb7); }
+    //   50% { filter: drop-shadow(0px 0px 10px #ffffffb7, 0px 40px 40px #fb3d3d); }
+    //   100% { filter: drop-shadow(0px 0px 10px #ffffffb7); }
+    // }
+  }
+}
